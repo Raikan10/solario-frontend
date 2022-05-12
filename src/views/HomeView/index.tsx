@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FC } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
@@ -14,16 +15,25 @@ export const HomeView: FC = ({}) => {
   return (
     <div className="container mx-auto max-w-6xl p-8 2xl:px-0">
       <div className={styles.container}>
-        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box bg-black">
           <div className="flex-none">
             <button className="btn btn-square btn-ghost">
-              <span className="text-4xl">🦤</span>
+              <Image
+                src="/logo.png"
+                alt="Landscape picture"
+                width={64}
+                height={64}
+              />
             </button>
           </div>
           <div className="flex-1 px-2 mx-2">
-            <span className="text-lg font-bold">Caw Caw</span>
+            <span className="text-lg font-bold">Solario</span>
           </div>
-          <div className="flex-none">
+          <div className="flex flex-row">
+            
+              <div className="p-3 rounded-box hover:bg-gray-900"><a href="https://devnet.solarare.com/2z6xE1bu2fN6vozeg9G1HuTuzmRkHRZWrKB9KWiXMKqA">Mint</a></div>
+            
+            <div className="p-3 rounded-box hover:bg-gray-900"><Link href="/gallery"><a>View NFTs</a></Link></div>
             <WalletMultiButton className="btn btn-ghost" />
           </div>
         </div>
@@ -32,8 +42,11 @@ export const HomeView: FC = ({}) => {
           <div className="hero min-h-16 py-4">
             <div className="text-center hero-content">
               <div className="max-w-lg">
+              <h1 className="mb-5 text-5xl font-bold">
+              {publicKey? <>Hello {publicKey?.toBase58().slice(0,10)}...</>:null}
+              </h1>
                 <h1 className="mb-5 text-5xl font-bold">
-                  Hello Solana <SolanaLogo /> World!
+                   Welcome to <span className="bg-gradient-to-b from-yellow-300 to-red-600 text-transparent bg-clip-text">Solario</span> on the <SolanaLogo /> Blockchain!
                 </h1>
                 <p className="mb-5">
                   This scaffold includes awesome tools for rapid development and
@@ -51,30 +64,7 @@ export const HomeView: FC = ({}) => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <h1 className="mb-5 pb-8 text-5xl">Templates:</h1>
-            <ul className="text-left leading-10">
-              <li className="mb-5">
-                <Link href="/gallery">
-                  <a className="text-4xl font-bold hover:underline">
-                    🏞 -- NFT Gallery
-                  </a>
-                </Link>
-              </li>
-              {/* <li className="mb-5">
-                <Link href="/mint">
-                  <a className="text-4xl font-bold hover:underline">
-                    🍬 -- Candy Machine Mint UI
-                  </a>
-                </Link>
-              </li> */}
-              <li>
-                <Link href="/tweeter">
-                  <a className="mb-5 text-4xl font-bold hover:underline">
-                    🐦 -- Solana Tweeter
-                  </a>
-                </Link>
-              </li>
-            </ul>
+            
           </div>
         </div>
       </div>

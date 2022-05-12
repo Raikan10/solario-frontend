@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FC, useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
@@ -37,27 +38,26 @@ export const GalleryView: FC = ({}) => {
   return (
     <div className="container mx-auto max-w-6xl p-8 2xl:px-0">
       <div className={styles.container}>
-        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+        
+        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box bg-black">
           <div className="flex-none">
-            <button className="btn btn-square btn-ghost">
-              <span className="text-4xl">🏞</span>
-            </button>
+            <Link href="/" passHref><button className="btn btn-square btn-ghost">
+              <Image
+                src="/logo.png"
+                alt="Landscape picture"
+                width={64}
+                height={64}
+              />
+            </button></Link>
           </div>
           <div className="flex-1 px-2 mx-2">
-            <div className="text-sm breadcrumbs">
-              <ul className="text-xl">
-                <li>
-                  <Link href="/">
-                    <a>Templates</a>
-                  </Link>
-                </li>
-                <li>
-                  <span className="opacity-40">NFT Gallery</span>
-                </li>
-              </ul>
-            </div>
+            <span className="text-lg font-bold">Solario</span>
           </div>
-          <div className="flex-none">
+          <div className="flex flex-row">
+            
+              <div className="p-3 rounded-box hover:bg-gray-900"><a href="https://devnet.solarare.com/2z6xE1bu2fN6vozeg9G1HuTuzmRkHRZWrKB9KWiXMKqA">Mint</a></div>
+            
+            <div className="p-3 rounded-box hover:bg-gray-900"><Link href="/gallery"><a>View NFTs</a></Link></div>
             <WalletMultiButton className="btn btn-ghost" />
           </div>
         </div>
