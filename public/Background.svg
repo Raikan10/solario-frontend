@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Desktop HD Copy</title>
+    <defs>
+        <linearGradient x1="50%" y1="53.7029206%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF0000" offset="0%"></stop>
+            <stop stop-color="#FFC807" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop-HD-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#000000" x="0" y="0" width="1440" height="1024"></rect>
+        <ellipse id="Oval" fill="url(#linearGradient-1)" transform="translate(719.628698, 1213.907729) rotate(-180.000000) translate(-719.628698, -1213.907729) " cx="719.628698" cy="1213.90773" rx="890.5" ry="463"></ellipse>
+    </g>
+</svg>

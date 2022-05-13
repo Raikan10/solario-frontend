@@ -58,6 +58,9 @@ export const NftCard: FC<Props> = ({
       </figure>
       <div className="card-body">
         <h2 className="card-title text-sm text-left">{name}</h2>
+        <div className="card-actions justify-end">
+      <button className="btn btn-primary bg-black border-0 hover:bg-yellow-600"><a href="http://localhost:3001/3xz2rDiTYyJmW6HFrrynssGnitUJpzLm69bGJqUhxSqK?cluster=devnet">Stake</a></button>
+    </div>
       </div>
     </div>
   );

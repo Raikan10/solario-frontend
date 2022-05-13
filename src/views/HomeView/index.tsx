@@ -15,7 +15,7 @@ export const HomeView: FC = ({}) => {
   return (
     <div className="container mx-auto max-w-6xl p-8 2xl:px-0">
       <div className={styles.container}>
-        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box bg-black">
+        <div className="navbar mb-2 shadow-lg text-neutral-content rounded-box bg-black">
           <div className="flex-none">
             <button className="btn btn-square btn-ghost">
               <Image
@@ -31,7 +31,7 @@ export const HomeView: FC = ({}) => {
           </div>
           <div className="flex flex-row">
             
-              <div className="p-3 rounded-box hover:bg-gray-900"><a href="https://devnet.solarare.com/2z6xE1bu2fN6vozeg9G1HuTuzmRkHRZWrKB9KWiXMKqA">Mint</a></div>
+              <div className="p-3 rounded-box hover:bg-gray-900"><a href="https://devnet.solarare.com/2z6xE1bu2fN6vozeg9G1HuTuzmRkHRZWrKB9KWiXMKqA" rel="noreferrer">Mint</a></div>
             
             <div className="p-3 rounded-box hover:bg-gray-900"><Link href="/gallery"><a>View NFTs</a></Link></div>
             <WalletMultiButton className="btn btn-ghost" />
@@ -45,26 +45,19 @@ export const HomeView: FC = ({}) => {
               <h1 className="mb-5 text-5xl font-bold">
               {publicKey? <>Hello {publicKey?.toBase58().slice(0,10)}...</>:null}
               </h1>
-                <h1 className="mb-5 text-5xl font-bold">
+                <h1 className="mb-10 text-6xl font-bold">
                    Welcome to <span className="bg-gradient-to-b from-yellow-300 to-red-600 text-transparent bg-clip-text">Solario</span> on the <SolanaLogo /> Blockchain!
                 </h1>
-                <p className="mb-5">
-                  This scaffold includes awesome tools for rapid development and
-                  deploy dapps to Solana: Next.JS, TypeScript, TailwindCSS,
-                  Daisy UI.
-                </p>
-                <p className="mb-5">
-                  Sollana wallet adapter is connected and ready to use.
+                <p className="mb-5 text-3xl">
+                Solario is a project at the intersection web3 x renewable energy.</p>
+                <p className="mb-5 text-3xl">
+We create utiltity NFTs that loan us the capital needed to fund solar farms.
                 </p>
                 <p>
                   {publicKey ? <>Your address: {publicKey.toBase58()}</> : null}
                 </p>
               </div>
             </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            
           </div>
         </div>
       </div>

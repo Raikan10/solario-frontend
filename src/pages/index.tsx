@@ -11,6 +11,7 @@ const Home: NextPage = (props) => {
           name="description"
           content="This site will fly high 🦤"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeView />
     </div>
