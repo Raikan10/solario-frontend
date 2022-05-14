@@ -1,62 +1,20 @@
-# Create Solana Dapp with Next.JS
 
-Want to start develop with Solana fetching NFTs from the blockchain or power-up your [Anchor](https://project-serum.github.io/anchor/getting-started/introduction.html) app with UI?   
-This boilerplate can be used to setup your UI with React.JS / Next.JS and deploy it to [Vercel Platform](https://vercel.com/) in just a minutes.
+# Solario
 
+Solario is a web3 NFT platform that utilizes NFTs as loans to fund the development of solar farms. The NFTs act as a proof of the loan and staking them will result in a return of 6%.
 
+You can visit the demo [here](https://solario-frontend.vercel.app/)
 
-https://user-images.githubusercontent.com/188568/152035121-400a89b2-a5f7-4dca-9abd-b5991dc99f2c.mp4
-
-
-
-
-## 🛵 ◍ Demo: https://create-dapp-solana-nextjs.vercel.app/
-
-This project includes:
-
-- Next.JS
-- TypeScript
-- [@solana/wallet-adapter](https://github.com/solana-labs/wallet-adapter) and [@solana/web3.js](https://solana-labs.github.io/solana-web3.js) for interactions with wallets & blockchain.
-- Tailwind CSS (with [daisyUI](https://daisyui.com/))
+# How it works
+ - We find customers who want to switch to solar
+--If they can save money vs. what they currently pay for their (largely coal powered) electricity.
+ - We help finance the switch to solar
+--Financing helps spread the upfront cost of solar over time. The better the financing terms, the lower the monthly cost. If the monthly cost of solar falls well below what our customers currently pay, they are eager to switch.
+- You invest
+--Your money adds to the pool of financing for our solar projects. Projects listed here may already be in a portfolio or about to receive an investment. Your loan may fund a new plant, or support an existing funding need which frees up capital for a new plant.
+- You earn a return while accelerating clean energy
+--We start repaying your loan in monthly installments, 30 days after your investment is finalized. You can instantly withdraw that money or re-deploy it into more solar projects!
 
 ## Getting Started
+Go to [the app](https://solario-frontend.vercel.app) and head over to the [candy machine](https://devnet.solarare.com/2z6xE1bu2fN6vozeg9G1HuTuzmRkHRZWrKB9KWiXMKqA) by pressing the Mint button in the nav-bar to mint a new NFT. Then go back to the app's [NFT Gallery](https://solario-frontend.vercel.app/gallery) and decide which NFT that you want to stake. This will take you to [cardinal's staking ui](https://staking.cardinal.so/3xz2rDiTYyJmW6HFrrynssGnitUJpzLm69bGJqUhxSqK?cluster=devnet) to enable you to stake the token and earn rewards.
 
-First, run the development server:
-
-```bash
-yarn
-yarn run dev
-```
-
-// TODO
-If you deploy new Candy Machine you can update UI config here: `./src/config/candy-machine.config.js`.
-
-## Style
-
-[Tailwind CSS](https://tailwindcss.com/) or [daisyUI](https://daisyui.com/) are selected tools for rapid style development.
-
-You can quickly change theme changing `daisy.themes` within `./tailwind.config.js`.
-More info here: https://daisyui.com/docs/default-themes
-
-This app encourage you to use CSS Modules over other style technics (like SASS/LESS, Styled Components, usual CSS).
-It have modular nature and supports modern CSS. [Read more on Next.JS site](https://nextjs.org/docs/basic-features/built-in-css-support).
-Anyway, if you want to connect LESS there is example code in `./next.config.js`
-
-## Deploy on Vercel
-
-Before push run localy `npm run build` to make sure app can be build succesffully on vercel .
-
-Vercel will automatically create environment and deployment for you if you have vercel account connected to your GitHub account. Go to the vercel.com to connect it.
-Then any push to `main` branch will automatically rebuild and redploy app.
-
-### Possible Issues 
-
-- You might [need to overwrite default output derictory](https://github.com/thuglabs/create-dapp-solana-nextjs/issues/23) for vercel settings if you see [`Routes Manifest Could Not Be Found
-`](https://github.com/vercel/vercel/blob/main/errors/now-next-routes-manifest.md) error.
-
-## Templates
-
-This boilerplate includes some templates you may find useful:
-
-- NFT Gallery Template
-- UI for Anchor app (Anchor program based on [this tutorial](https://lorisleiva.com/create-a-solana-dapp-from-scratch))
