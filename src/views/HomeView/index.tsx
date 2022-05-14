@@ -53,9 +53,6 @@ export const HomeView: FC = ({}) => {
                 <p className="mb-5 text-3xl">
 We create utiltity NFTs that loan us the capital needed to fund solar farms.
                 </p>
-                <p>
-                  {publicKey ? <>Your address: {publicKey.toBase58()}</> : null}
-                </p>
               </div>
             </div>
           </div>
