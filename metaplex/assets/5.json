@@ -1,0 +1,35 @@
+{
+    "name": "Jupiter",
+    "symbol": "SM",
+    "description": "Collection of 10 celestial bodies. Hodl to earn interest",
+    "seller_fee_basis_points": 500,
+    "image": "5.png",
+    "attributes": [
+        {
+            "trait_type": "Celestial Body",
+            "value": "Planet"
+        },
+        {
+            "trait_type": "Size",
+            "value": "1"
+        }
+    ],
+    "properties": {
+        "creators": [
+            {
+                "address": "4f1r6uwEua8wfYr4R9bCpanpBRtjRE5DJq2ijF4WtFKs",
+                "share": 100
+            }
+        ],
+        "files": [
+            {
+                "uri": "5.png",
+                "type": "image/png"
+            }
+        ]
+    },
+    "collection": {
+        "name": "Space Money",
+        "family": "Space Money"
+    }
+}
